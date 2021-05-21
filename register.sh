@@ -1,1 +1,0 @@
-hyshm ~/cluster.json install --organization-identifier Org1MSP --administrator-logon Admin@org1.example.com --administrator-password adminpw --chaincode-name shell-linux --chaincode-identifier c46bde49271c45bca1df3ff876e4b2a9 --chaincode-version 0.0.1

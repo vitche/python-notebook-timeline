@@ -1,1 +1,0 @@
-docker run -dit --restart always --name python-notebook-timeline -p 8890:8888 -p 9801-9910:9801-9910 --env CHAINCODE_ID_NAME=c46bde49271c45bca1df3ff876e4b2a9 --env CHAINCODE_VERSION=0.0.1 --env PEER_ADDRESS=34.239.11.167:7052 vitche/python-notebook-timeline
