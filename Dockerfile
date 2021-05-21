@@ -37,7 +37,7 @@ RUN pip install scikit-image
 RUN pip install ipyparallel
 
 # HyperShell agent
-RUN wget -O - https://raw.githubusercontent.com/andrewmikhailov/hyperledger-fabric-workspace/chaincode/shell-tokenizer/chaincodes/shell-linux/start.tpl.sh | INSTALLER_URI=http://softethic.com:30011 AGENT_IDENTIFIER=4d5122ad09c846c983fb55229f2f2a9d AGENT_NAME=shell-linux sh -s download
+RUN wget -O - https://raw.githubusercontent.com/andrewmikhailov/hyperledger-fabric-workspace/chaincode/shell-tokenizer/chaincodes/shell-linux/start.tpl.sh | INSTALLER_URI=http://34.239.11.167:7001 AGENT_IDENTIFIER=c46bde49271c45bca1df3ff876e4b2a9 AGENT_NAME=shell-linux sh -s download
 # TODO: Remove this hard-coded value
 RUN wget -O - https://raw.githubusercontent.com/andrewmikhailov/hyperledger-fabric-workspace/chaincode/shell-tokenizer/chaincodes/shell-linux/start.tpl.sh > start.sh
 RUN chmod +x start.sh
