@@ -45,5 +45,7 @@ RUN wget -O - https://raw.githubusercontent.com/andrewmikhailov/hyperledger-fabr
 RUN chmod +x start.sh
 WORKDIR /home/jovyan/
 
+COPY ./work/. ./work/
+
 COPY processes.sh /usr/local/bin/
 CMD ["processes.sh"]
