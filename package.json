@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "docker:build": "docker build -t vitche/python-notebook-timeline .",
-    "docker:push": "docker push vitche/python-notebook-timeline",
-    "docker:run": "docker run -dit --restart always --name python-notebook-timeline -p 8890:8888 -p 9801-9910:9801-9910 --env CHAINCODE_ID_NAME=c46bde49271c45bca1df3ff876e4b2a9 --env CHAINCODE_VERSION=0.0.1 --env PEER_ADDRESS=34.239.11.167:7052 vitche/python-notebook-timeline",
-    "hysh:register": "hyshm ~/cluster.json install --organization-identifier Org1MSP --administrator-logon Admin@org1.example.com --administrator-password adminpw --chaincode-name shell-linux --chaincode-identifier c46bde49271c45bca1df3ff876e4b2a9 --chaincode-version 0.0.1",
-    "hysh:instantiate": "hyshm ~/cluster.json instantiate --organization-identifier Org1MSP --administrator-logon Admin@org1.example.com --administrator-password adminpw --chaincode-name c46bde49271c45bca1df3ff876e4b2a9 --chaincode-version 0.0.1"
+    "docker:push": "docker push vitche/python-notebook-timeline"
   },
   "author": "",
   "license": "ISC"
