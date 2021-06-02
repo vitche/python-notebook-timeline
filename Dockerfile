@@ -44,11 +44,11 @@ RUN wget -O - https://raw.githubusercontent.com/andrewmikhailov/hyperledger-fabr
 # TODO: Remove this hard-coded value
 RUN wget -O - https://raw.githubusercontent.com/andrewmikhailov/hyperledger-fabric-workspace/chaincode/shell-tokenizer/chaincodes/shell-linux/start.tpl.sh > start.sh
 RUN chmod +x start.sh
-WORKDIR /home/jovyan/
 
 COPY processes.sh /usr/local/bin/
 
 USER jovyan
+WORKDIR /home/jovyan/
 COPY ./work/. ./work/
 
 CMD ["processes.sh"]
