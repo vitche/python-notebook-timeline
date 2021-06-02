@@ -9,6 +9,7 @@ RUN apt install -y graphviz
 RUN apt install -y build-essential
 RUN apt install -y unzip
 RUN apt install -y bc
+RUN apt install -y net-tools
 
 # PIP packages
 RUN pip install pandas numpy scipy matplotlib plotly sklearn graphviz beautifulsoup4 bs4 hide_code
